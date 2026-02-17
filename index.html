@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="英検3級の頻出英単語100語を学習できるフラッシュカードアプリ。品詞別フィルタ、プログレスバー、例文表示機能付き。">
+    <meta name="keywords" content="英検3級, 英単語, フラッシュカード, 学習アプリ">
+    <title>英検3級 英単語カード</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>英検3級 英単語カード</h1>
+        <p>クリックして意味と例文を確認しましょう</p>
+    </header>
+
+    <div class="filter-section">
+        <label for="filter-select">品詞フィルタ:</label>
+        <select id="filter-select">
+            <option value="全て">全て (100語)</option>
+            <option value="動詞">動詞 (25語)</option>
+            <option value="名詞">名詞 (35語)</option>
+            <option value="形容詞">形容詞 (25語)</option>
+            <option value="副詞">副詞 (15語)</option>
+        </select>
+    </div>
+
+    <div class="progress-section">
+        <div class="progress-bar-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        <p class="progress-text" id="progress-text">学習進捗: 1 / 100 (1%)</p>
+    </div>
+
+    <main>
+        <div class="card-container">
+            <div class="card" id="flashcard">
+                <div class="card-face card-front">
+                    <h2 id="word-text">Loading...</h2>
+                </div>
+                <div class="card-face card-back">
+                    <p id="meaning-text">...</p>
+                    <span class="part-of-speech" id="part-text"></span>
+                    <p class="example-text" id="example-text">...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="prev-btn">← 前へ</button>
+            <span id="counter">1 / 100</span>
+            <button id="next-btn">次へ →</button>
+        </div>
+
+        <div class="sub-controls">
+            <button id="shuffle-btn" class="secondary-btn">シャッフル</button>
+        </div>
+    </main>
+
+    <footer class="credits">
+        <h3>制作物について</h3>
+        <div class="credit-content">
+            <p><strong>出典・参考：</strong></p>
+            <ul>
+                <li>アニメーションロジック：以下のMDN Web Docsリファレンスを参考に3D回転動作を実装。
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/ja/docs/Web/CSS/transform" target="_blank"
+                                rel="noopener noreferrer">MDN: transform - CSS</a></li>
+                        <li><a href="https://developer.mozilla.org/ja/docs/Web/CSS/perspective" target="_blank"
+                                rel="noopener noreferrer">MDN: perspective - CSS</a></li>
+                        <li><a href="https://developer.mozilla.org/ja/docs/Web/CSS/backface-visibility" target="_blank"
+                                rel="noopener noreferrer">MDN: backface-visibility - CSS</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <p><strong>実装の工夫点：</strong></p>
+            <ul>
+                <li><strong>データ管理の効率化：</strong> JavaScriptの配列を用いて単語データを管理。将来的な単語の追加や変更が容易な設計にしています。</li>
+                <li><strong>視覚的フィードバック：</strong> perspectiveとrotateYを組み合わせ、物理的なカードを模した直感的なUIを構築しました。</li>
+                <li><strong>学習支援機能：</strong> 基本的な表示機能に加え、記憶の定着を助けるための「ランダムシャッフル機能」をJavaScriptで独自に実装しました。</li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
