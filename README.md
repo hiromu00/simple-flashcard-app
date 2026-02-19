@@ -60,7 +60,7 @@ simple-flashcard-app/
    python3 -m http.server 8000
    # ブラウザで http://localhost:8000 にアクセス
    ```
-   
+
    または、`index.html`を直接ブラウザで開く（一部ブラウザではCORSエラーが発生する場合があります）
 
 ## 使い方
@@ -87,11 +87,3 @@ simple-flashcard-app/
 ### アルゴリズム
 - Fisher-Yates Shuffle による完全ランダム並び替え
 - `Array.filter()`による効率的な品詞フィルタリング
-
-## ライセンス
-
-MIT License
-
-## 制作者
-
-開発者名 - [@yourhandle](https://github.com/yourusername)

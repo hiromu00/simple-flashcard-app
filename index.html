@@ -59,33 +59,6 @@
             <button id="shuffle-btn" class="secondary-btn">シャッフル</button>
         </div>
     </main>
-
-    <footer class="credits">
-        <h3>制作物について</h3>
-        <div class="credit-content">
-            <p><strong>出典・参考：</strong></p>
-            <ul>
-                <li>アニメーションロジック：以下のMDN Web Docsリファレンスを参考に3D回転動作を実装。
-                    <ul>
-                        <li><a href="https://developer.mozilla.org/ja/docs/Web/CSS/transform" target="_blank"
-                                rel="noopener noreferrer">MDN: transform - CSS</a></li>
-                        <li><a href="https://developer.mozilla.org/ja/docs/Web/CSS/perspective" target="_blank"
-                                rel="noopener noreferrer">MDN: perspective - CSS</a></li>
-                        <li><a href="https://developer.mozilla.org/ja/docs/Web/CSS/backface-visibility" target="_blank"
-                                rel="noopener noreferrer">MDN: backface-visibility - CSS</a></li>
-                    </ul>
-                </li>
-            </ul>
-
-            <p><strong>実装の工夫点：</strong></p>
-            <ul>
-                <li><strong>データ管理の効率化：</strong> JavaScriptの配列を用いて単語データを管理。将来的な単語の追加や変更が容易な設計にしています。</li>
-                <li><strong>視覚的フィードバック：</strong> perspectiveとrotateYを組み合わせ、物理的なカードを模した直感的なUIを構築しました。</li>
-                <li><strong>学習支援機能：</strong> 基本的な表示機能に加え、記憶の定着を助けるための「ランダムシャッフル機能」をJavaScriptで独自に実装しました。</li>
-            </ul>
-        </div>
-    </footer>
-
     <script src="js/script.js"></script>
 </body>
 
