@@ -87,3 +87,7 @@ simple-flashcard-app/
 ### アルゴリズム
 - Fisher-Yates Shuffle による完全ランダム並び替え
 - `Array.filter()`による効率的な品詞フィルタリング
+
+## ライセンス
+
+このプロジェクトは [The Unlicense](LICENSE) の元で公開されています。
